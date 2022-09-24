@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="relative bg-green-300 w-1/2 h-20">
+        <p>Parent</p>
+        <div class="absolute bottom-0 right-0 bg-green-500">
+            Child
+        </div>
+    </div>
+
+    <!-- Top Left -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute h-10 w-10 bg-rose-500 top-0 left-0"></div>
+    </div>
+
+    <!-- Top Right -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute h-10 w-10 bg-rose-500 top-0 right-0"></div>
+    </div>
+
+    <!-- Bottom Right -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute h-10 w-10 bg-rose-500 bottom-0 right-0"></div>
+    </div>
+
+    <!-- Bottom Left -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute h-10 w-10 bg-rose-500 bottom-0 left-0"></div>
+    </div>
+
+    <!--  -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute inset-x-0 h-10 bg-rose-500 bottom-0 left-0"></div>
+    </div>
+
+    <!--  -->
+    <div class="relative h-32 w-32 bg-rose-300">
+        <div class="absolute inset-y-0 w-10 bg-rose-500 bottom-0 left-0"></div>
+    </div>
+
+    <div class="relative h-48">
+        <div class="absolute bg-rose-200 w-32 h-32 left-10 z-10">1</div>
+        <div class="absolute bg-rose-300 w-32 h-32 left-20">2</div>
+        <div class="absolute bg-rose-400 w-32 h-32 left-40 z-20">3</div>
+        <div class="absolute bg-rose-500 w-32 h-32 left-60 z-30">4</div>
+        <div class="absolute bg-rose-600 w-32 h-32 left-80 z-50">5</div>
+    </div>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. <span class="inline font-bold">inline</span> Sint, quam! Magni
+         tenetur velit odio mollitia facere consectetur 
+         animi temporibus <span class="inline-block font-bold">inline block</span> a tempora ipsam,
+          repudiandae <span class="block font-bold">Block</span> veritatis, debitis corporis
+           maxime  <span class="hidden">Hidden</span> dignissimos fuga rerum!
+    </p>
+    
+</body>
+</html>

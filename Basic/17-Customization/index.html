@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    screens: {
+                        sm: '576px',
+                        md: '750px'
+                    },
+                    fontFamily: {
+                        ok: ['Rubik Dirt', 'cursive'],
+                        oo: ['Passions Conflict', 'cursive']
+
+                    },
+                    colors: {
+                        'primary': '#dc2626' 
+                    },
+                    spacing: {
+                        '128': '32rem'
+                    }
+                }
+                
+            }
+        }
+    </script>
+</head>
+<body class="bg-pink-200 sm:bg-pink-400 md:bg-pink-600 lg:bg-pink-800">
+    
+    <h1 class="md:text-2xl lg:text-4xl font-ok"></h1>
+    <h2 class="font-oo text-3xl mb-128">Point</h2>
+    <h3 class="text-primary border border-primary p-10">Colors</h3>
+
+    <script>
+        const screenWidth = () => {
+            const width = window.innerWidth
+
+            document.querySelector('h1').innerHTML = `Width: ${width} px`
+        }
+
+        window.onload = screenWidth
+        window.onresize = screenWidth
+    </script>
+    
+</body>
+</html>

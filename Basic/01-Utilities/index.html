@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .toast {
+            width: 400px;
+            /* height: 100px; */
+            background-color: #efefef;
+            border-radius: 15px;
+            padding: 15px;
+        }
+        .ret {
+            width: 30px;
+            height: 30px;
+            background-color: #dc2626;
+        }
+        .ret-text {
+            display: flex;
+            align-items: center;
+        }
+        .toast-body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- html/css pure -->
+    <!-- <div class="toast">
+        <div class="toast-body">
+            <div class="ret-text">
+                <div class="ret"></div>
+                <h2>Toast</h2>
+            </div>
+            <span>11 min ago</span>
+        </div>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam veniam esse perferendis iusto illo voluptatum explicabo commodi sequi quibusdam assumenda. Numquam excepturi amet exercitationem fugit hic doloribus quisquam iure quaerat.
+        </p>
+    </div> -->
+
+
+
+
+    <!-- Tailwind CSS -->
+    <div class="w-80 bg-slate-100 p-2 rounded rounded-lg">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="w-4 h-4 bg-red-300"></div>
+                <h2 class="text-3xl">Toast</h2>
+            </div>
+            <span>11 min ago</span>
+        </div>
+        <hr>
+        <p>
+            Loremng elit. ipsum enim impedit maxime assumenda iste voluptatem consequuntur, nemo quaerat quam quod. Veniam aliquam provident qui!
+        </p>
+    </div>
+    
+</body>
+</html>
